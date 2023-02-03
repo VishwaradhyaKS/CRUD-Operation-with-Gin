@@ -12,10 +12,11 @@ func init() {
 	initializers.ConnectToDB()
 }
 
+// PR for Chkdin
 func main() {
 
 	r := gin.Default()
- 
+
 	r.POST("/posts", controllers.PostsCreate)
 	r.GET("/posts", controllers.PostsIndex)
 	r.GET("/posts/:id", controllers.PostsShow)
